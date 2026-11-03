@@ -28,10 +28,54 @@ const CERTIFICATES = [
     category: "QUALITY ASSURANCE",
     date: "October 29, 2026",
     credentialId: "DJA-B-1-3249541-0",
+    verifyUrl:
+      "https://www.learntube.ai/verify/certificate/DJA-B-1-3249541-0",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - Automation_Testing_Sumit_Certificate.png",
     description:
       "Successfully completed the Automation Testing Assessment offered by LearnTube.ai, demonstrating knowledge of test automation concepts and software testing practices.",
+  },
+  {
+    id: "api-integration",
+    title: "API Integration",
+    issuer: "LearnTube.ai",
+    category: "TECHNICAL SKILLS",
+    date: "October 23, 2026",
+    credentialId: "DJA-B-1-3236395-0",
+    verifyUrl:
+      "https://ai-ready.learntube.ai/",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - API Integration Certificate of Completion.png",
+    description:
+      "Successfully completed the API Integration course offered by LearnTube.ai, demonstrating knowledge of API integration concepts and practices.",
+  },
+  {
+    id: "component-testing",
+    title: "Component Testing",
+    issuer: "LearnTube.ai",
+    category: "QUALITY ASSURANCE",
+    date: "October 23, 2026",
+    credentialId: "DJA-B-1-323746-0",
+    verifyUrl:
+      "https://ai-ready.learntube.ai/",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Component Testing Certificate.png",
+    description:
+      "Successfully completed the Component Testing course offered by LearnTube.ai, demonstrating knowledge of component-level testing and software quality validation.",
+  },
+  {
+    id: "frontend-debugging",
+    title: "Frontend Debugging",
+    issuer: "LearnTube.ai",
+    category: "TECHNICAL SKILLS",
+    date: "October 23, 2026",
+    credentialId: "DJA-B-1-656688-0",
+    verifyUrl:
+      "https://ai-ready.learntube.ai/",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Frontend Debugging Certificate.png",
+    description:
+      "Successfully completed the Frontend Debugging course offered by LearnTube.ai, demonstrating knowledge of frontend debugging techniques and issue investigation.",
   },
   {
     id: "istqb-testing-generative-ai",
@@ -40,6 +84,8 @@ const CERTIFICATES = [
     category: "QUALITY ASSURANCE",
     date: "October 08, 2026",
     credentialId: "25-CTGenAI-616984-15",
+    verifyUrl:
+      "https://www.istqb.in/certification-verification",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB Generative AI Certificate.png",
     description:
@@ -52,6 +98,8 @@ const CERTIFICATES = [
     category: "QUALITY ASSURANCE",
     date: "October 1, 2026",
     credentialId: "CTFL-143893 India",
+    verifyUrl:
+      "https://www.istqb.in/certification-verification",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - Certificate of Profession - ISTQB Automation Test Engineer.png",
     description:
@@ -64,6 +112,8 @@ const CERTIFICATES = [
     category: "QUALITY ASSURANCE",
     date: "September 1, 2026",
     credentialId: "CTFL-146891 India",
+    verifyUrl:
+      "https://www.istqb.in/certification-verification",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB CTFL Certificate of Profession.png",
     description:
@@ -76,6 +126,8 @@ const CERTIFICATES = [
     category: "QUALITY ASSURANCE",
     date: "August 1, 2026",
     credentialId: "CTFL-144993 India",
+    verifyUrl:
+      "https://www.istqb.in/certification-verification",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - Certificate of Foundation Level Of Software Testing Profession.png",
     description:
@@ -84,10 +136,12 @@ const CERTIFICATES = [
   {
     id: "istqb-ctfl-core",
     title: "ISTQB Certified Tester – Foundation Level (Core)",
-    issuer: "ISTQB • SLSTB",
+    issuer: "ISTQB • Sri Lanka Software Testing Board",
     category: "QUALITY ASSURANCE",
     date: "October 21, 2026",
     credentialId: "CTFL-2526-8991",
+    verifyUrl:
+      "https://www.istqb.in/certification-verification",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB Foundation Level Certificate.png",
     description:
@@ -96,10 +150,12 @@ const CERTIFICATES = [
   {
     id: "istqb-ctfl-agile",
     title: "ISTQB Certified Tester – Foundation Level Agile Tester",
-    issuer: "ISTQB • SLSTB",
+    issuer: "ISTQB • Sri Lanka Software Testing Board",
     category: "QUALITY ASSURANCE",
     date: "October 15, 2026",
     credentialId: "SL-CTFL-2425-8193",
+    verifyUrl:
+      "https://www.istqb.in/certification-verification",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB Foundation Level Agile Tester Certificate.png",
     description:
@@ -148,6 +204,8 @@ const CERTIFICATES = [
     category: "QUALITY ASSURANCE",
     date: "February 13, 2025",
     credentialId: "DJA-B-1-988362-0",
+    verifyUrl:
+      "https://www.learntube.ai/verify/certificate/DJA-B-1-988362-0",
     image:
       "/Sumit Panchal - Certificates/Sumit Panchal - Business_Analyst Assessment_Certificate.png",
     description:
