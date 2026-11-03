@@ -4,10 +4,10 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const EMAIL_ADDRESS = "harshithachodey05@gmail.com";
+const EMAIL_ADDRESS = "sumitpanchal5225@gmail.com";
 const PHONE_NUMBER = "6301496899";
-const LINKEDIN_URL = "https://www.linkedin.com/in/harshitha-ch-b6771835a/";
-const GITHUB_URL = "https://github.com/harshithachodey05-hub";
+const LINKEDIN_URL = "https://www.linkedin.com/in/sumit-panchal-b790a8236/";
+const GITHUB_URL = "https://github.com/lifeofthecoders";
 
 const ArrowUpRight = () => (
   <svg
@@ -98,16 +98,16 @@ const Contact = () => {
       </div>
 
       <h2 id="ct-headline" ref={headlineRef}>
-        {splitChars("let's talk.")}
+        {splitChars("Let's Talk.")}
       </h2>
 
       <a
         id="ct-email"
         href={`mailto:${EMAIL_ADDRESS}`}
         ref={emailRef}
-        aria-label="Email Harshitha Chodey"
+        aria-label="Email Sumit Panchal"
       >
-        harshithachodey05@gmail.com
+        sumitpanchal5225@gmail.com
       </a>
 
       <div id="ct-actions" ref={ctaRef}>
@@ -122,15 +122,6 @@ const Contact = () => {
         </a>
         <a
           id="ct-btn-secondary"
-          href={LINKEDIN_URL}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>LINKEDIN</span>
-          <ArrowUpRight />
-        </a>
-        <a
-          id="ct-btn-secondary"
           href={GITHUB_URL}
           target="_blank"
           rel="noreferrer"
@@ -140,9 +131,18 @@ const Contact = () => {
         </a>
         <a
           id="ct-btn-secondary"
+          href={LINKEDIN_URL}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>LINKEDIN</span>
+          <ArrowUpRight />
+        </a>
+        <a
+          id="ct-btn-secondary"
           href={`tel:${PHONE_NUMBER}`}
         >
-          <span>+91 6301496899</span>
+          <span>CALL</span>
           <ArrowUpRight />
         </a>
       </div>

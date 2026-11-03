@@ -5,140 +5,333 @@ import { motion, AnimatePresence } from "framer-motion";
 import CertificateModal from "./CertificateModal";
 
 const CERTIFICATES = [
+  // 1. Primary Quality Assurance Credentials
   {
-    id: "fcc-ml",
-    title: "Machine Learning with Python Developer",
-    issuer: "freeCodeCamp",
-    category: "AI & ML",
-    date: "September 4, 2025",
-    credentialId: "harshitha_chode",
-    verifyUrl: "https://freecodecamp.org/certification/harshitha_chode/machine-learning-with-python-v7",
-    image: "/certificates/freecodecamp-ml-python.jpeg",
-    description: "Comprehensive 300-hour developer certification demonstrating proficiency in core Machine Learning pipelines and algorithms in Python.",
+    id: "quality-analyst-assessment",
+    title: "Quality Analyst Assessment Certificate",
+    issuer: "LearnTube.ai",
+    category: "QUALITY ASSURANCE",
+    date: "October 23, 2026",
+    credentialId: "DJA-B-1-3236295-0",
+    verifyUrl:
+      "https://www.learntube.ai/verify/certificate/DJA-B-1-3236295-0",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Quality_Analyst Assessment_Certificate.png",
+    description:
+      "Quality Analyst assessment credential demonstrating professional competence in software quality assurance, analytical testing skills, and defect identification.",
   },
   {
-    id: "nptel-iot",
-    title: "Introduction to Internet of Things (Elite 76%)",
-    issuer: "NPTEL • IIT Kharagpur • SWAYAM",
-    category: "Technical & Cloud",
-    date: "Jan - Apr 2026",
-    credentialId: "NPTEL26CS37S851301821",
-    image: "/certificates/nptel-iot-elite.jpeg",
-    description: "Elite 12-week academic certification by Ministry of Education, Govt. of India covering IoT communication architectures and cloud hardware integration.",
+    id: "automation-testing-assessment",
+    title: "Automation Testing Assessment Certificate",
+    issuer: "LearnTube.ai",
+    category: "QUALITY ASSURANCE",
+    date: "October 29, 2026",
+    credentialId: "DJA-B-1-3249541-0",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Automation_Testing_Sumit_Certificate.png",
+    description:
+      "Successfully completed the Automation Testing Assessment offered by LearnTube.ai, demonstrating knowledge of test automation concepts and software testing practices.",
   },
   {
-    id: "aws-genai",
-    title: "Developing Generative AI Solutions",
-    issuer: "AWS Training & Certification",
-    category: "AI & ML",
-    date: "July 22, 2026",
-    credentialId: "AWS-GenAI-2026",
-    image: "/certificates/aws-genai-solutions.jpeg",
-    description: "Specialized AWS technical training on architecting, fine-tuning, and implementing generative foundation AI models.",
+    id: "istqb-testing-generative-ai",
+    title: "ISTQB Certified Tester – Testing with Generative AI (v1.1)",
+    issuer: "ISTQB / iSQI",
+    category: "QUALITY ASSURANCE",
+    date: "October 08, 2026",
+    credentialId: "25-CTGenAI-616984-15",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB Generative AI Certificate.png",
+    description:
+      "Successfully passed the ISTQB Certified Tester examination in Testing with Generative AI (v1.1), demonstrating knowledge of generative AI fundamentals, LLM prompting for software testing, associated risks and mitigations, and the application of generative AI in software testing.",
   },
   {
-    id: "cerevyn-intern",
-    title: "Full Stack Developer Internship Completion",
-    issuer: "Cerevyn Solutions Pvt Ltd",
-    category: "Internships",
-    date: "June 1 – June 30, 2026",
-    credentialId: "Dr. Krishna Kishore, CEO & Founder",
-    image: "/certificates/cerevyn-solutions-internship.jpeg",
-    description: "Official internship completion letter certifying successful tenure as Full Stack Developer Intern at Cerevyn Solutions, recognizing sincerity, dedication, and engineering contributions across web platforms and operations modules.",
+    id: "istqb-automation",
+    title: "ISTQB Automation Test Engineer",
+    issuer: "ISTQB • Indian Testing Board",
+    category: "QUALITY ASSURANCE",
+    date: "October 1, 2026",
+    credentialId: "CTFL-143893 India",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Certificate of Profession - ISTQB Automation Test Engineer.png",
+    description:
+      "ISTQB Automation Test Engineer certification awarded by the Indian Testing Board, validating skills in test automation strategies and implementation.",
   },
   {
-    id: "nit-ml",
-    title: "Machine Learning Research Internship",
-    issuer: "National Institute of Technology (NIT), Tiruchirappalli",
-    category: "Internships",
-    date: "May 15 – July 31, 2025",
-    credentialId: "Dr. Vinay Raj Guidance",
-    image: "/certificates/nit-trichy-ml-internship.jpeg",
-    description: "Research internship in predictive model architectures and validation pipelines under the direct guidance of Dr. Vinay Raj.",
+    id: "istqb-ctfl-profession",
+    title: "ISTQB CTFL Certificate of Profession",
+    issuer: "ISTQB • Indian Testing Board",
+    category: "QUALITY ASSURANCE",
+    date: "September 1, 2026",
+    credentialId: "CTFL-146891 India",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB CTFL Certificate of Profession.png",
+    description:
+      "ISTQB CTFL Certificate of Profession confirming successful completion of Foundation Level requirements under the Indian Testing Board.",
   },
   {
-    id: "hoc-intern",
-    title: "Software Developer Internship Completion",
-    issuer: "House of Companies",
-    category: "Internships",
-    date: "June 1 – July 1, 2025",
-    credentialId: "Dr. Krishna Kishore, Director",
-    image: "/certificates/house-of-companies-internship.jpeg",
-    description: "Internship completion certificate recognizing core contributions across Java, web modules, and collaborative team sprints.",
+    id: "istqb-foundation-profession",
+    title: "Foundation Level Certificate in Software Testing",
+    issuer: "ISTQB • Indian Testing Board",
+    category: "QUALITY ASSURANCE",
+    date: "August 1, 2026",
+    credentialId: "CTFL-144993 India",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Certificate of Foundation Level Of Software Testing Profession.png",
+    description:
+      "Foundation Level Certificate in Software Testing awarded by the Indian Testing Board for satisfying ISTQB Foundation Level requirements.",
   },
   {
-    id: "tata-forage",
-    title: "GenAI Powered Data Analytics Simulation",
-    issuer: "Tata • Forage",
-    category: "Data & Workshops",
-    date: "July 17, 2026",
-    credentialId: "6a59f1ac4bffa9009bfae047",
-    image: "/certificates/tata-genai-data-analytics.jpeg",
-    description: "Practical simulation in predictive risk profiling with AI, exploratory data analysis, and strategic data storytelling.",
+    id: "istqb-ctfl-core",
+    title: "ISTQB Certified Tester – Foundation Level (Core)",
+    issuer: "ISTQB • SLSTB",
+    category: "QUALITY ASSURANCE",
+    date: "October 21, 2026",
+    credentialId: "CTFL-2526-8991",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB Foundation Level Certificate.png",
+    description:
+      "ISTQB Certified Tester Foundation Level (CTFL; Core) v4.0 – internationally recognized foundation certification in software testing principles and practices.",
   },
   {
-    id: "deloitte-forage",
-    title: "Data Analytics Job Simulation",
+    id: "istqb-ctfl-agile",
+    title: "ISTQB Certified Tester – Foundation Level Agile Tester",
+    issuer: "ISTQB • SLSTB",
+    category: "QUALITY ASSURANCE",
+    date: "October 15, 2026",
+    credentialId: "SL-CTFL-2425-8193",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - ISTQB Foundation Level Agile Tester Certificate.png",
+    description:
+      "ISTQB Certified Tester Foundation Level Agile Tester (CTFL-AT; Agile) v4.0 – specialized certification focused on testing in Agile environments.",
+  },
+  {
+    id: "linkedin-exploratory-testing",
+    title: "Software Testing: Exploratory Testing",
+    issuer: "LinkedIn Learning",
+    category: "QUALITY ASSURANCE",
+    date: "August 22, 2020",
+    credentialId: "LIL-2020-EXPTST-7845210369",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - LinkedIn Learning Certificate of Completion.png",
+    description:
+      "Completed Software Testing: Exploratory Testing training, strengthening knowledge of exploratory testing techniques and practical software quality evaluation.",
+  },
+  {
+    id: "deloitte-qa",
+    title: "Quality Assurance Job Simulation",
     issuer: "Deloitte • Forage",
-    category: "Data & Workshops",
+    category: "QUALITY ASSURANCE",
     date: "July 22, 2026",
-    credentialId: "hYZaiaBwqjDPoPpFG",
-    image: "/certificates/deloitte-data-analytics.jpeg",
-    description: "Enterprise simulation tackling real-world business data analysis and forensic technology investigation workflows.",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Deloitte Quality Assurance Certificate.png",
+    description:
+      "Completed practical tasks in Test Automation and Defect Management as part of Deloitte’s Quality Assurance Job Simulation.",
   },
   {
-    id: "codechef-1000",
-    title: "Problem Solver Diamond Badge (1000+ Problems)",
-    issuer: "CodeChef",
-    category: "Achievements",
-    date: "2025 - 2026",
-    credentialId: "CodeChef Diamond Tier",
-    image: "/certificates/codechef-1000-problems.jpeg",
-    description: "Diamond tier milestone awarded for solving over 1,000 data structure and algorithm challenges on CodeChef.",
+    id: "tata-forage-qa",
+    title: "Quality Assurance Job Simulation",
+    issuer: "Tata • Forage",
+    category: "QUALITY ASSURANCE",
+    date: "July 17, 2026",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - TATA Forage Certificate of Completion.png",
+    description:
+      "Completed practical tasks in test automation framework development, performance testing and analysis, defect lifecycle management and reporting, and continuous integration test execution.",
   },
   {
-    id: "purplelane-mern",
-    title: "2-Week MERN Stack Intensive Workshop",
-    issuer: "PurpleLane • SASI Autonomous Institute",
-    category: "Technical & Cloud",
-    date: "October 18, 2025",
-    credentialId: "PurpleLane MERN-2025",
-    image: "/certificates/purplelane-sasi-mern.jpeg",
-    description: "Hands-on full-stack development workshop building production web applications using MongoDB, Express, React, and Node.",
+    id: "business-analyst-assessment",
+    title: "Business Analyst Assessment Certificate",
+    issuer: "LearnTube.ai",
+    category: "QUALITY ASSURANCE",
+    date: "February 13, 2025",
+    credentialId: "DJA-B-1-988362-0",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Business_Analyst Assessment_Certificate.png",
+    description:
+      "Business Analyst assessment credential supporting analytical thinking, requirements understanding, and quality-focused evaluation skills.",
+  },
+
+  // 2. Technical Skills Supporting QA
+  {
+    id: "github-foundations",
+    title: "GitHub Foundations",
+    issuer: "Microsoft",
+    category: "TECHNICAL SKILLS",
+    date: "October 21, 2026",
+    credentialId: "7EBB6E-CW5424",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Microsoft GitHub Foundations Certificate.png",
+    description:
+      "Microsoft GitHub Foundations certification covering version control, collaboration workflows, and repository management essential for modern QA practices.",
   },
   {
-    id: "officemaster-pbi",
-    title: "PowerBI AI Dashboards Workshop",
-    issuer: "OfficeMaster",
-    category: "Data & Workshops",
-    date: "February 22, 2026",
-    credentialId: "Verified OfficeMaster",
-    image: "/certificates/officemaster-powerbi.jpeg",
-    description: "Building interactive, AI-powered business intelligence dashboards and operational data models in PowerBI.",
+    id: "oracle-java-foundations",
+    title: "Oracle Certified Foundations Associate – Java",
+    issuer: "Oracle University",
+    category: "TECHNICAL SKILLS",
+    date: "May 8, 2025",
+    credentialId: "319309938JAVA8OJA",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Oracle Certified Foundations Associate Certificate.png",
+    description:
+      "Oracle Java Certified Foundations Associate recognition, providing a solid foundation in Java programming relevant to test automation and scripting.",
   },
   {
-    id: "hp-design",
-    title: "Design Thinking Course Completion",
-    issuer: "HP LIFE • HP Foundation",
-    category: "Technical & Cloud",
-    date: "July 18, 2026",
-    credentialId: "e03cb92b-bebf-4714-9ff0-aa7a58542890",
-    image: "/certificates/hp-life-design-thinking.jpeg",
-    description: "Mastering user-centered problem solving, customer feedback synthesis, and iterative solution prototyping.",
+    id: "oracle-data-platform",
+    title: "Oracle Data Platform 2025 Certified Foundations Associate",
+    issuer: "Oracle University",
+    category: "TECHNICAL SKILLS",
+    date: "September 29, 2025",
+    credentialId: "3193099380C125DCFA",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Oracle Foundations Associate  Oracle_DataPlatform Certificate.png",
+    description:
+      "Oracle Data Platform 2025 Certified Foundations Associate, covering data concepts useful for database testing and data validation.",
   },
+  {
+    id: "react-essential-training",
+    title: "React Essential Training",
+    issuer: "LinkedIn Learning",
+    category: "TECHNICAL SKILLS",
+    date: "October 11, 2025",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - React Essential Training Certificate.png",
+    description:
+      "Training in React.js and front-end development, providing technical context for validating modern web application interfaces and user workflows.",
+  },
+  {
+    id: "learning-python",
+    title: "Learning Python",
+    issuer: "LinkedIn Learning",
+    category: "TECHNICAL SKILLS",
+    date: "October 11, 2025",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - LinkedIn Learning Python Certificates.png",
+    description:
+      "Comprehensive introduction to Python programming, supporting scripting capabilities useful in test automation and data-driven testing.",
+  },
+  {
+    id: "processing-text-python-essential",
+    title: "Processing Text with Python Essential Training",
+    issuer: "LinkedIn Learning",
+    category: "TECHNICAL SKILLS",
+    date: "October 11, 2025",
+    credentialId: "o9f3c8e2b1d47f6a0e5c9b8d2f1a3e7c4b6d9f0e8a2c5b7d1e4f9a3c6b8d0e2",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - LinkedIn Learning Python Essential Certificate.png",
+    description:
+      "Completed Processing Text with Python Essential Training, covering unstructured data processing, Python programming, and text mining—skills that can support log analysis and data validation in software testing.",
+  },
+  {
+    id: "processing-text-python",
+    title: "Processing Text with Python Essential Training",
+    issuer: "LinkedIn Learning",
+    category: "TECHNICAL SKILLS",
+    date: "October 11, 2025",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - LinkedIn Learning Python Certificate.png",
+    description:
+      "Specialized training in processing unstructured data and text mining with Python, relevant for log analysis and data validation in testing.",
+  },
+  {
+    id: "intro-data-science",
+    title: "Introduction to Data Science",
+    issuer: "Cisco Networking Academy • JS Institute",
+    category: "TECHNICAL SKILLS",
+    date: "February 21, 2025",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Cisco Networking Academy Certificate.png",
+    description:
+      "Introduction to Data Science offered through the Cisco Networking Academy program, building analytical foundations useful for quality analysis.",
+  },
+  {
+    id: "javascript-essentials-1",
+    title: "JavaScript Essentials 1",
+    issuer: "Cisco Networking Academy • Silver Oak University",
+    category: "TECHNICAL SKILLS",
+    date: "August 23, 2017",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - JavaScript Essentials Certificate 1.png",
+    description:
+      "JavaScript Essentials 1 covering core language concepts, supporting understanding of client-side application behavior during testing.",
+  },
+  {
+    id: "javascript-essentials-2",
+    title: "JavaScript Essentials 2",
+    issuer: "Cisco Networking Academy • Silver Oak University",
+    category: "TECHNICAL SKILLS",
+    date: "August 23, 2017",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - JavaScript Essentials Certificate 2.png",
+    description:
+      "JavaScript Essentials 2 advancing programming skills for deeper insight into web application logic and test scenarios.",
+  },
+  {
+    id: "css-essentials",
+    title: "CSS Essentials",
+    issuer: "Cisco Networking Academy • Silver Oak University",
+    category: "TECHNICAL SKILLS",
+    date: "July 19, 2017",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Modern CSS Essentials Certificate.png",
+    description:
+      "CSS Essentials training focused on styling and layout, aiding visual and UI testing of web applications.",
+  },
+  {
+    id: "html-essentials",
+    title: "HTML Essentials",
+    issuer: "Cisco Networking Academy • Silver Oak University",
+    category: "TECHNICAL SKILLS",
+    date: "July 17, 2017",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - Modern HTML Essentials Certificate.png",
+    description:
+      "HTML Essentials covering structural web technologies, providing foundational knowledge for functional and accessibility testing.",
+  },
+  {
+    id: "cpp-programming",
+    title: "CLA: Programming Essentials in C",
+    issuer: "C++ Institute • Cisco Networking Academy",
+    category: "TECHNICAL SKILLS",
+    date: "March 21, 2017",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - C++ Programming Achievement Certificate.png",
+    description:
+      "Programming Essentials in C covering fundamental programming concepts, syntax, and problem-solving techniques.",
+  },
+
+  // 3. Achievements & Extracurricular
   {
     id: "quizoff-ai",
     title: "QuizOff 2026: India's Biggest AI Quiz",
     issuer: "CampusCrew • Unstop",
-    category: "Achievements",
+    category: "ACHIEVEMENTS",
     date: "July 19, 2026",
-    credentialId: "National Competitor",
-    image: "/certificates/quizoff-ai-quiz.jpeg",
-    description: "Recognized among top competitors in India's largest AI competition across 525,000+ students from 35+ countries.",
+    credentialId: "",
+    image:
+      "/Sumit Panchal - Certificates/Sumit Panchal - QuizOff 2026 Certificate for Sumit Panchal.png",
+    description:
+      "Participation recognition for QuizOff 2026 – India’s Biggest AI Quiz, organized by CampusCrew and hosted on Unstop, involving over 525,000 students.",
   },
 ];
 
-const CATEGORIES = ["ALL", "AI & ML", "INTERNSHIPS", "TECHNICAL & CLOUD", "DATA & WORKSHOPS", "ACHIEVEMENTS"];
+const CATEGORIES = [
+  "ALL",
+  "QUALITY ASSURANCE",
+  "TECHNICAL SKILLS",
+  "ACHIEVEMENTS",
+];
 
 const Certificates = () => {
   const [activeCategory, setActiveCategory] = useState("ALL");
@@ -147,10 +340,16 @@ const Certificates = () => {
   const filteredCerts =
     activeCategory === "ALL"
       ? CERTIFICATES
-      : CERTIFICATES.filter((c) => c.category.toLowerCase() === activeCategory.toLowerCase());
+      : CERTIFICATES.filter(
+        (cert) =>
+          cert.category.toLowerCase() === activeCategory.toLowerCase()
+      );
 
   return (
-    <section id="certificates-section" className="w-full px-6 sm:px-12 lg:px-20 py-24 bg-bg text-fg">
+    <section
+      id="certificates-section"
+      className="w-full px-6 sm:px-12 lg:px-20 py-24 bg-bg text-fg"
+    >
       <div className="pj-head mb-8">
         <span className="pj-label">VERIFIED CREDENTIALS</span>
         <h2 className="pj-title">certifications &amp; honors</h2>
@@ -163,11 +362,10 @@ const Certificates = () => {
             key={cat}
             type="button"
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all whitespace-nowrap cursor-pointer ${
-              activeCategory === cat
-                ? "bg-fg text-bg shadow-sm"
-                : "bg-fg/5 text-fg-muted hover:text-fg hover:bg-fg/10"
-            }`}
+            className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wider transition-all whitespace-nowrap cursor-pointer ${activeCategory === cat
+              ? "bg-fg text-bg shadow-sm"
+              : "bg-fg/5 text-fg-muted hover:text-fg hover:bg-fg/10"
+              }`}
           >
             {cat} {cat === "ALL" ? `(${CERTIFICATES.length})` : ""}
           </button>
@@ -197,6 +395,7 @@ const Certificates = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
+
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-bg/90 backdrop-blur-sm text-fg text-xs font-semibold px-3 py-1.5 rounded-full shadow-md flex items-center gap-1">
                       <span>Inspect</span>
@@ -205,21 +404,25 @@ const Certificates = () => {
                   </div>
                 </div>
 
-                {/* Tag & Date */}
+                {/* Category & Date */}
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-accent/10 text-accent font-semibold tracking-wider uppercase">
+                  <span className="text-[10px] font-mono px-0 py-0.5 rounded-full bg-accent/10 text-accent font-semibold tracking-wider uppercase">
                     {cert.category}
                   </span>
-                  <span className="text-[11px] text-fg-muted font-medium">{cert.date}</span>
+                  <span className="text-[11px] text-fg-muted font-medium">
+                    {cert.date}
+                  </span>
                 </div>
 
                 {/* Title & Issuer */}
-                <h3 className="text-base sm:text-lg font-semibold tracking-tight text-fg group-hover:text-accent transition-colors line-clamp-2 mb-1.5">
+                <h3 className="text-base sm:text-lg font-semibold tracking-tight text-fg group-hover:text-[#0016EC] transition-colors duration-300 line-clamp-2 mb-1.5">
                   {cert.title}
                 </h3>
+
                 <p className="text-xs font-medium text-fg-muted/90 mb-2">
                   {cert.issuer}
                 </p>
+
                 <p className="text-xs text-fg-muted line-clamp-2 leading-relaxed">
                   {cert.description}
                 </p>
@@ -228,8 +431,11 @@ const Certificates = () => {
               {/* Bottom bar */}
               <div className="pt-4 mt-4 border-t border-theme-border/60 flex items-center justify-between text-xs font-medium">
                 <span className="text-fg-muted group-hover:text-fg transition-colors">
-                  {cert.credentialId ? `ID: ${cert.credentialId.slice(0, 20)}` : "Verified Credential"}
+                  {cert.credentialId
+                    ? `ID: ${cert.credentialId.slice(0, 20)}`
+                    : "Certificate"}
                 </span>
+
                 <span className="text-accent group-hover:translate-x-1 transition-transform">
                   ➔
                 </span>
@@ -239,7 +445,7 @@ const Certificates = () => {
         </AnimatePresence>
       </div>
 
-      {/* Fullscreen Lightbox Modal */}
+      {/* Fullscreen Certificate Modal */}
       <CertificateModal
         cert={selectedCert}
         isOpen={Boolean(selectedCert)}

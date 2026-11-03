@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useEffect, useRef } from "react";
@@ -6,75 +7,99 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const PROJECTS = [
   {
-    name: "CivicFlow AI",
-    href: "https://civic-flow-2.vercel.app",
-    github: "https://github.com/harshithachodey05-hub/civic-flow-2",
-    role: "React.js • Node.js • Express • MongoDB • Gemini LLM • Tesseract OCR",
-    kind: "Live App",
-    note: "AI-powered civic grievance routing platform with photo and geolocation evidence, automated classification via LLM & OCR, and robust security architecture.",
-  },
-  {
-    name: "BioFactor Pulse",
-    href: "https://intern-mu-one.vercel.app",
-    github: "https://github.com/harshithachodey05-hub/intern",
-    role: "React.js • REST APIs • Enterprise Dashboards • Field Operations Platform",
-    kind: "Live App",
-    note: "Enterprise agricultural operations platform featuring real-time workforce tracking, farmer onboarding CRM, live leaderboards, and automated attendance workflows delivered during internship at Cerevyn Solutions.",
-  },
-  {
-    name: "Insightful",
+    name: "LYMÜV - Taxi Booking Application",
     href: null,
-    github: "https://github.com/harshithachodey05-hub",
-    role: "React.js • Vite • Node.js • Gemini AI • Pinecone • MongoDB Atlas",
-    kind: "AI / RAG Platform",
-    note: "AI customer feedback analysis platform built for a Generative AI Workshop, utilizing Retrieval-Augmented Generation (RAG) to transform unstructured user reviews into sentiment insights, emerging themes, and competitive intelligence.",
+    github: null,
+    role:
+      "Manual Testing • Ride Booking Flow • Driver Assignment • Payment & Wallet • Live Tracking • Notifications • Regression Testing • Admin Panel Testing",
+    kind: "Taxi Booking & Ride-Hailing QA Project",
+    note:
+      "A real-time taxi booking platform with live tracking, digital payments, wallet, promotions, ratings, and invoicing. QA coverage includes end-to-end booking workflows, driver assignment logic, payment gateway and wallet validation, notifications, invoicing, and admin panel functionality across Android, iOS, and web admin platforms.",
   },
   {
-    name: "SmartPooling",
+    name: "Dap Me - Professional Networking Application",
     href: null,
-    github: "https://github.com/harshithachodey05-hub/smartpooling-frontend",
-    role: "React.js • Tailwind CSS • Smart Ride Sharing",
-    kind: "Frontend System",
-    note: "Intelligent carpooling and route-sharing web application optimizing commute sharing, passenger discovery, and route matching.",
+    github: null,
+    role:
+      "Manual Testing • Registration & Login • User Profiles • Connections & Networking • Chat & Messaging • Search & Discovery • Notifications • Privacy & Account Settings • Admin Panel",
+    kind: "Professional Networking QA Project",
+    note:
+      "A React Native professional networking application for discovering professionals, connecting with people, chatting in real time, sharing profiles, and managing professional interactions securely. Testing covers authentication, profile management, connections, messaging, notifications, subscriptions, payment gateway workflows, and admin moderation.",
   },
   {
-    name: "Smart Parking Management System",
-    href: "https://parking-management-system-umber.vercel.app",
-    github: "https://github.com/harshithachodey05-hub/parking-management",
-    role: "React.js • Vite • Material-UI • Node.js • REST API • Render",
-    kind: "Live App",
-    note: "Comprehensive smart parking management ecosystem featuring interactive multi-floor slot mapping, real-time vehicle allocation (Car/Bike/EV), dynamic check-in/check-out billing, and an administrative control suite with bulk slot provisioning and live occupancy analytics.",
+    name: "Kinzwin - Multiplayer Gaming Platform & Scoreboard Application",
+    href: null,
+    github: null,
+    role:
+      "Manual QA • Gameplay Testing • Scoring Validation • Multiplayer Synchronization • Chat Testing • Leaderboards • Fair Play Validation • Regression Testing",
+    kind: "Multiplayer Gaming & Scoreboard QA Project",
+    note:
+      "A competitive multiplayer gaming platform offering casual and skill-based games, social engagement, and real-time competition. QA activities include gameplay and scoring validation, multiplayer synchronization, chat functionality, leaderboard verification, fair-play checks, and release regression testing.",
+  },
+  {
+    name: "Bunny Books - Photo Book E-Commerce Application",
+    href: null,
+    github: null,
+    role:
+      "Manual Testing • Photo Upload • Album Creation • Design Preview • Cart & Checkout • Payment Processing • Order Management • Delivery Tracking • Notifications",
+    kind: "Photo Book E-Commerce QA Project",
+    note:
+      "A photo-book ordering platform that enables users to upload photos, create and preview personalized photo books, select layouts and cover types, complete secure checkout, and track order delivery. Testing focuses on photo uploads, album creation, design previews, cart and checkout flows, payment processing, notifications, delivery tracking, and admin management.",
+  },
+  {
+    name: "Health-E - Digital Health & Medical Records Application",
+    href: null,
+    github: null,
+    role:
+      "Manual QA • Registration & OTP Verification • Medical Records & Reports • Profile & Health Information • Appointment Scheduling • Medication Reminders • ABHA Number Generation • Pregnancy & Paediatric Modules • Authentication & Role-Based Access",
+    kind: "Digital Health & Medical Records QA Project",
+    note:
+      "An ABHA-focused digital health application for managing medical records, health information, appointments, medication reminders, and emergency contacts. QA coverage includes mobile registration and OTP verification, profile validation, medical-record lifecycle operations, appointment scheduling, ABHA number generation, pregnancy and paediatric care features, and administrator access controls.",
+  },
+  {
+    name: "reGive - Community Sharing & Gift Transaction Application",
+    href: null,
+    github: null,
+    role:
+      "Manual Testing • Post & Edit Article • Image Upload & Item Details • Article Request & Withdrawal • Promise, Accept & Decline • Pickup Time & Address Selection • Transaction Status Progression • Notifications & Reminders • Rating Scenarios",
+    kind: "Community Sharing & Gift Transaction QA Project",
+    note:
+      "A community-sharing app where users post articles they want to give away, browse item details, send or withdraw requests, and coordinate pickup times. The documented transaction lifecycle progresses through Posted, Requested, Promised, Accepted, Handover, Pickup, Concluded, and Rating, with notifications and expiry handling for time-sensitive steps.",
   },
 ];
 
 const VENTURES = [
   {
-    name: "Enterprise Full-Stack Platforms",
-    role: "Scalable Application Architecture",
+    name: "End-to-End Quality Assurance",
+    role: "Functional • Integration • Regression • Release Testing",
     href: null,
-    kind: "Capability",
-    note: "Multi-role enterprise platforms with scalable modular architecture, robust authentication, and high-concurrency client state.",
+    kind: "QA Capability",
+    note:
+      "Validating complete business workflows across web and mobile applications, including integrations, critical user journeys, regression coverage, and release readiness.",
   },
   {
-    name: "AI Systems & LLM Workflows",
-    role: "Gemini • OCR • RAG • Vector DB",
+    name: "Test Design & Documentation",
+    role: "Requirements • Test Scenarios • Test Cases • Test Coverage",
     href: null,
-    kind: "Capability",
-    note: "Intelligent document classification, automated grievance routing, sentiment analysis, and conversational pipelines.",
+    kind: "QA Capability",
+    note:
+      "Translating business requirements into structured test scenarios, detailed test cases, test data, and traceable documentation that supports systematic validation.",
   },
   {
-    name: "Real-Time Operations Dashboards",
-    role: "Analytics • Metrics • Visual Reporting",
+    name: "Defect Analysis & Management",
+    role: "Bug Reporting • Severity & Priority • Retesting • Verification",
     href: null,
-    kind: "Capability",
-    note: "Real-time field workforce monitoring, dynamic charts, data tables, and automated attendance analytics.",
+    kind: "QA Capability",
+    note:
+      "Identifying, reproducing, documenting, and tracking defects with clear evidence and reproducible steps to support effective resolution and reliable verification.",
   },
   {
-    name: "High-Performance Modern Web Frontends",
-    role: "React.js • Next.js • Tailwind CSS",
+    name: "Web, Mobile & User Experience Testing",
+    role: "UI Validation • Compatibility • Usability • User Workflows",
     href: null,
-    kind: "Capability",
-    note: "Modular, accessible user interfaces built with responsive design standards, micro-interactions, and sub-second load times.",
+    kind: "QA Capability",
+    note:
+      "Evaluating responsive interfaces, cross-browser behavior, device compatibility, usability, and real-world user interactions to identify risks before release.",
   },
 ];
 
@@ -101,57 +126,69 @@ const Row = ({ item, index }) => {
   return (
     <li className="pj-row">
       <div className="pj-link group">
-        <span className="pj-num">{String(index + 1).padStart(2, "0")}</span>
-        
+        <span className="pj-num">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+
         <div className="pj-meta">
           <div className="flex items-center gap-3 flex-wrap">
             <span className="pj-name text-fg group-hover:text-accent transition-colors">
               {item.name}
             </span>
+
+            {/*
+              FUTURE USE: Live Demo button
+              Uncomment when a project demo URL is available.
+
             {item.href && (
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noreferrer"
-                className="text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-white transition-colors flex items-center gap-1"
-                title="Open Live Project"
-              >
+              <a href={item.href} target="_blank" rel="noreferrer" className="text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-white transition-colors flex items-center gap-1" title="Open Live Project">
                 <span>Live Demo</span>
                 <span aria-hidden="true">↗</span>
               </a>
             )}
+            */}
+
+            {/*
+              FUTURE USE: Source button
+              Uncomment when a project repository URL is available.
+
             {item.github && (
-              <a
-                href={item.github}
-                target="_blank"
-                rel="noreferrer"
-                className="text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full border border-fg/20 text-fg-muted hover:text-fg hover:border-fg transition-colors flex items-center gap-1"
-                title="View GitHub Repository"
-              >
+              <a href={item.github} target="_blank" rel="noreferrer" className="text-[11px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full border border-fg/20 text-fg-muted hover:text-fg hover:border-fg transition-colors flex items-center gap-1" title="View GitHub Repository">
                 <span>Source</span>
                 <span aria-hidden="true">↗</span>
               </a>
             )}
+            */}
           </div>
-          {item.role && <span className="pj-role">{item.role}</span>}
-          {item.note && <span className="pj-note leading-relaxed">{item.note}</span>}
+
+          {item.role && (
+            <span className="pj-role">{item.role}</span>
+          )}
+
+          {item.note && (
+            <span className="pj-note leading-relaxed">
+              {item.note}
+            </span>
+          )}
         </div>
 
         <span className="pj-kind">{item.kind}</span>
+
         <span className="pj-arrow" aria-hidden="true">
+          {/*
+            FUTURE USE: Live App / repository arrow link
+            Restore this conditional link when project URLs are available.
+
           {hasLink ? (
-            <a
-              href={primaryUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={`Open ${item.name}`}
-              className="text-fg group-hover:text-accent transition-colors"
-            >
+            <a href={primaryUrl} target="_blank" rel="noreferrer" aria-label={`Open ${item.name}`} className="text-fg group-hover:text-accent transition-colors">
               <ArrowIcon />
             </a>
           ) : (
             <span className="pj-dot">•</span>
           )}
+          */}
+
+          <span className="pj-dot">•</span>
         </span>
       </div>
     </li>
@@ -163,10 +200,12 @@ const Projects = () => {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
       const rows = sectionRef.current.querySelectorAll(".pj-row");
+
       gsap.fromTo(
         rows,
         { opacity: 0, y: 40 },
@@ -186,6 +225,7 @@ const Projects = () => {
       );
 
       const titles = sectionRef.current.querySelectorAll(".pj-title");
+
       gsap.fromTo(
         titles,
         { opacity: 0, y: 30 },
@@ -232,7 +272,7 @@ const Projects = () => {
 
       <div id="ventures" className="pj-head pj-head--secondary">
         <span className="pj-label">WHAT I BUILD</span>
-        <h2 className="pj-title">systems &amp; solutions</h2>
+        <h2 className="pj-title">QUALITY & ASSURANCE</h2>
       </div>
 
       <ul className="pj-list">

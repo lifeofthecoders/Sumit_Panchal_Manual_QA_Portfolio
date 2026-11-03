@@ -1,7 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 
-const EMAIL = "harshithachodey05@gmail.com";
+const EMAIL = "sumitpanchal5225@gmail.com";
 
 // "LET'S TALK" was previously a non-interactive div. It now opens the user's
 // mail client straight to the real contact email — which is also wired up
@@ -26,7 +26,7 @@ const LetsTalk = () => {
     <a
       href="#contact-section"
       aria-label="Contact Section"
-      className="nav_btn_lg nav_btn_dark flex items-center justify-center hover:bg-brblue py-6"
+      className="nav_btn_lg nav_btn_dark flex items-center justify-center py-6 cursor-pointer transition-colors duration-200 hover:bg-brblue hover:text-white"
       onMouseEnter={() => {
         api.start({ x: 20 });
         opacityApi.start({ opacity: 0, x: 5 });

@@ -30,15 +30,15 @@ const MenuButton = () => {
   const handleClick = () => {
     menuApi.stop();
     closeApi.stop();
-      menuApi.start({
-        y: !isOpen ? -offset : offset,
-        opacity: !isOpen ? 0 : 1,
-      });
+    menuApi.start({
+      y: !isOpen ? -offset : offset,
+      opacity: !isOpen ? 0 : 1,
+    });
 
-      closeApi.start({
-        y: !isOpen ? -offset : offset,
-        opacity: !isOpen ? 1 : 0,
-      });
+    closeApi.start({
+      y: !isOpen ? -offset : offset,
+      opacity: !isOpen ? 1 : 0,
+    });
   };
 
   const ref = useRef();
@@ -71,9 +71,10 @@ const MenuButton = () => {
         // Background colors are sourced from theme tokens (bg-brgray ↔
         // bg-bg-alt) so the button visually adapts to light/dark mode
         // without keeping a hardcoded hex in component state.
-        className={`nav_btn_lg py-6 flex items-center justify-center cursor-pointer transition-colors duration-200 ${
-          isOpen ? "bg-bg-alt" : "bg-brgray hover:bg-bg-alt"
-        }`}
+        className={`nav_btn_lg py-6 flex items-center justify-center cursor-pointer transition-colors duration-200 ${isOpen
+            ? "bg-brblue text-white"
+            : "bg-brgray hover:bg-brblue hover:text-white"
+          }`}
         ref={ref}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

@@ -1,10 +1,10 @@
 import { useSpring, a } from "@react-spring/web";
 import React, { useEffect, useRef, useState } from "react";
 
-const EMAIL = "harshithachodey05@gmail.com";
+const EMAIL = "sumitpanchal5225@gmail.com";
 const PHONE = "tel:6301496899";
-const LINKEDIN_URL = "https://www.linkedin.com/in/harshitha-ch-b6771835a/";
-const GITHUB_URL = "https://github.com/harshithachodey05-hub";
+const LINKEDIN_URL = "https://www.linkedin.com/in/sumit-panchal-b790a8236/";
+const GITHUB_URL = "https://github.com/lifeofthecoders";
 
 const scrollToSection = (id) => {
   if (typeof window === "undefined") return;

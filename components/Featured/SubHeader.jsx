@@ -2,24 +2,24 @@ import React from 'react';
 
 const SERVICES = [
   {
-    title: 'Full Stack & Frontend',
+    title: 'Manual & Functional Testing',
     body:
-      'React.js, Next.js, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, and REST API integration for high-performance, responsive web applications.',
+      'Functional, regression, smoke, sanity, and exploratory testing to validate requirements, identify defects, and ensure reliable application behavior.',
   },
   {
-    title: 'Backend & Architecture',
+    title: 'Test Design & Documentation',
     body:
-      'Node.js, Express.js, FastAPI, MongoDB, and SQL.',
+      'Requirement analysis, test scenario development, test case design, test data preparation, traceability, and comprehensive test documentation.',
   },
   {
-    title: 'AI, ML & LLMs',
+    title: 'Defect Management & Analysis',
     body:
-      'Google Gemini LLM, Tesseract OCR, predictive model pipelines, and Retrieval-Augmented Generation (RAG).',
+      'Defect identification, reproduction, severity and priority assessment, bug reporting, retesting, and defect lifecycle management.',
   },
   {
-    title: 'Data Analytics & Tools',
+    title: 'Quality Assurance & Tools',
     body:
-      'Python data preprocessing, PowerBI AI dashboards, Git/GitHub, and Docker containerization.',
+      'Web and mobile application testing, cross-browser compatibility, UI validation, API testing, Jira, Postman, Agile/Scrum, SDLC, and STLC.',
   },
 ];
 
@@ -28,17 +28,23 @@ const SubHeader = () => {
     <div className='w-full flex flex-col items-start text-left px-4 md:px-0'>
       <div className='w-full text-base md:text-lg lg:text-xl flex flex-col gap-3 md:gap-4 leading-relaxed text-left text-fg'>
         <p className="font-medium">
-          Hi, I&apos;m <span className="text-accent font-semibold">Harshitha Chodey</span>, a Full-Stack &amp; Frontend Developer and AI/ML Specialist currently pursuing B.Tech in Computer Science &amp; Engineering (AI &amp; ML) at Sasi Institute of Technology and Engineering.
+          Hi, I&apos;m <span className="text-accent font-semibold">Sumit Panchal</span>,
+          a Manual QA Engineer with 5+ years of professional experience
+          ensuring software quality across web and mobile applications.
         </p>
         <p className="text-fg-muted">
-          With hands-on experience across three software engineering internships at Cerevyn Solutions, NIT Tiruchirappalli, and House of Companies, I build enterprise-grade full-stack platforms, real-time operations dashboards, and intelligent LLM/OCR-driven automation workflows.
+          I specialize in functional and regression testing, test case design,
+          defect lifecycle management, and end-to-end validation. With a
+          detail-oriented, risk-based approach, I identify critical defects,
+          validate business workflows, and collaborate with cross-functional
+          teams to improve product reliability and release confidence.
         </p>
       </div>
 
       <div className='about-inline-services w-full mt-8 md:mt-12 h-auto'>
         <div className='about-inline-services__head'>
           <span className='about-inline-services__label'>CORE EXPERTISE</span>
-          <span className='text-xs text-fg-muted font-medium tracking-wider uppercase'>TECHNICAL HIGHLIGHTS</span>
+          <span className='text-xs text-fg-muted font-medium tracking-wider uppercase'>QUALITY ENGINEERING</span>
         </div>
         <div className='about-inline-services__grid'>
           {SERVICES.map((service) => (

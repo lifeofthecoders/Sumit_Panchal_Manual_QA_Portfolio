@@ -13,15 +13,15 @@ const Header = () => {
 
   const horizontalCallback = open => api.start({ transform: `translateX(${open ? '20%' : '0%'})` });
   return (
-    <div className="w-full z-10 relative px-4 md:px-0 md:pl-6 font-semibold text-5xl sm:text-6xl md:text-[9rem] text-center md:text-left leading-[0.95] md:leading-none" style={{ letterSpacing: "-0.07em" }}>
+    <div className="w-full z-10 relative px-4 md:px-0 md:pl-6 font-semibold text-5xl sm:text-6xl md:text-[7rem] text-center md:text-left leading-[0.95] md:leading-none" style={{ letterSpacing: "-0.07em" }}>
       <Trail callback={horizontalCallback}>
         <a.div className="flex justify-center md:justify-start flex-wrap md:flex-nowrap" style={horizontal}>
-          <div>Building&nbsp;</div>
-          <div>Real&nbsp;</div>
+          <div>PRECISION&nbsp;</div>
+          <div>QUALITY&nbsp;</div>
         </a.div>
         <div className="flex justify-center md:justify-start flex-wrap md:flex-nowrap">
-          <div>Digital&nbsp;</div>
-          <div>Systems&nbsp;</div>
+          <div>TRUST&nbsp;</div>
+          <div>DELIVERED&nbsp;</div>
         </div>
       </Trail>
     </div>

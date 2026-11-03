@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const TEXT = "Engineering Scalable Full-Stack Systems & AI Solutions.";
+const TEXT = "Ensuring Software Quality Through Precision Testing & Risk Analysis.";
 
 const HorizontalScroll = () => {
   const wrapperRef = useRef(null);
@@ -95,7 +95,10 @@ const HorizontalScroll = () => {
   return (
     <section className="Horizontal" ref={wrapperRef}>
       <div className="hs-sticky" ref={stickyRef}>
-        <h3 className="Horizontal__text heading-xl" ref={textRef}>
+        <h3
+          className="Horizontal__text heading-xl text-[#0016EC]"
+          ref={textRef}
+        >
           {renderText()}
         </h3>
       </div>

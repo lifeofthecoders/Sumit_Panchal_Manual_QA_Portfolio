@@ -4,34 +4,88 @@ import { motion } from "framer-motion";
 
 const SKILL_GROUPS = [
   {
-    category: "Programming Languages",
-    skills: ["Python", "JavaScript", "Java", "C"],
-    summary: "Core languages utilized across algorithmic problem solving, modern web applications, and AI pipeline orchestration.",
+    label: "TEST EXECUTION",
+    category: "Manual Testing",
+    skills: [
+      "Functional Testing",
+      "Regression Testing",
+      "Smoke Testing",
+      "Sanity Testing",
+      "Exploratory Testing",
+      "Retesting",
+    ],
+    summary:
+      "Validating application functionality, business requirements, and end-to-end workflows to ensure reliable behavior across web and mobile platforms.",
   },
   {
-    category: "Frontend Engineering",
-    skills: ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "REST API Integration", "Responsive Architecture"],
-    summary: "Designing modular UI systems, component lifecycles, state management, and pixel-perfect responsive layouts.",
+    label: "TEST DESIGN",
+    category: "Test Design & Documentation",
+    skills: [
+      "Test Case Design",
+      "Test Scenarios",
+      "Test Planning",
+      "Test Data Preparation",
+      "Requirement Analysis",
+      "RTM",
+    ],
+    summary:
+      "Translating business requirements into structured test scenarios, comprehensive test cases, and traceable validation strategies.",
   },
   {
-    category: "Backend & Security",
-    skills: ["Node.js", "Express.js", "FastAPI", "MongoDB", "RESTful APIs"],
-    summary: "Architecting high-performance server architectures, scalable microservices, and robust RESTful API endpoints.",
+    label: "DEFECT CONTROL",
+    category: "Defect Management",
+    skills: [
+      "Bug Reporting",
+      "Defect Lifecycle",
+      "Severity & Priority",
+      "Defect Reproduction",
+      "Retesting",
+      "Root Cause Analysis",
+    ],
+    summary:
+      "Identifying, documenting, prioritizing, and tracking defects with clear reproduction steps to support efficient resolution and verification.",
   },
   {
-    category: "AI, ML & LLMs",
-    skills: ["Google Gemini LLM", "Tesseract OCR", "EasyOCR", "Machine Learning", "RAG Workflows", "Pinecone Vector DB", "Data Preprocessing"],
-    summary: "Deploying intelligent retrieval-augmented generation systems, OCR document processors, and predictive modeling pipelines.",
+    label: "APPLICATION QA",
+    category: "Web & Mobile QA",
+    skills: [
+      "UI Validation",
+      "Cross-Browser Testing",
+      "Responsive Testing",
+      "Usability Testing",
+      "Compatibility Testing",
+      "End-to-End Testing",
+    ],
+    summary:
+      "Evaluating user interfaces, device compatibility, responsive behavior, and complete user journeys across web and mobile applications.",
   },
   {
-    category: "Database",
-    skills: ["MySQL", "SQL", "Database Connectivity", "REST API Integration"],
-    summary: "Designing relational database schemas, structured querying, seamless backend database connectivity, and efficient REST API integrations.",
+    label: "QA METHODOLOGY",
+    category: "QA Methodologies",
+    skills: [
+      "SDLC",
+      "STLC",
+      "Agile / Scrum",
+      "Risk-Based Testing",
+      "Test Coverage",
+      "Release Validation",
+    ],
+    summary:
+      "Applying structured QA practices throughout the software development lifecycle to manage risks, improve coverage, and support release readiness.",
   },
   {
-    category: "Development Practices",
-    skills: ["Git", "GitHub", "VS Code", "Google Colab", "Jupyter", "Antigravity", "Vercel", "Render"],
-    summary: "Collaborative version control discipline, interactive notebook experimentation, rapid prototyping, and cloud application deployments.",
+    label: "QA TOOLKIT",
+    category: "QA Tools & Collaboration",
+    skills: [
+      "Jira",
+      "Postman",
+      "Git",
+      "GitHub",
+      "Browser DevTools",
+      "Test Documentation",
+    ],
+    summary:
+      "Supporting defect tracking, API validation, troubleshooting, version control, and effective collaboration with development and product teams.",
   },
 ];
 
@@ -39,8 +93,8 @@ const SkillsSection = () => {
   return (
     <section id="skills-section" className="w-full px-6 sm:px-12 lg:px-20 py-20 bg-bg text-fg">
       <div className="pj-head mb-10">
-        <span className="pj-label">TECHNICAL ARSENAL</span>
-        <h2 className="pj-title">skills &amp; proficiencies</h2>
+        <span className="pj-label">QA EXPERTISE</span>
+        <h2 className="pj-title">QUALITY ASSURANCE SKILLS</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -56,7 +110,7 @@ const SkillsSection = () => {
             <div>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-mono text-fg-muted uppercase tracking-widest">
-                  0{idx + 1} // DOMAIN
+                  {String(idx + 1).padStart(2, "0")} // {group.label}
                 </span>
                 <span className="w-2 h-2 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

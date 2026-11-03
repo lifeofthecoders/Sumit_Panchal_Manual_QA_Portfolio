@@ -88,7 +88,7 @@ const CertificateModal = ({ cert, isOpen, onClose }) => {
                   href={cert.verifyUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="px-4 py-2 rounded-full bg-accent text-white font-medium text-xs tracking-wider uppercase hover:bg-accent/90 transition-colors flex items-center gap-1.5 shadow-sm"
+                  className="px-4 py-2 rounded-full bg-[#0016EC] text-white font-medium text-xs tracking-wider uppercase hover:bg-[#0016EC]/90 transition-colors flex items-center gap-1.5 shadow-sm"
                 >
                   <span>Verify Credential</span>
                   <span aria-hidden="true">↗</span>

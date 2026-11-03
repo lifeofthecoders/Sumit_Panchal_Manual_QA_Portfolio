@@ -11,7 +11,7 @@ const HeroSection = () => {
   const loaderRef = useRef(null);
   const [loaderDone, setLoaderDone] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentText, setCurrentText] = useState("హర్షిత పోర్ట్‌ఫోలియో");
+  const [currentText, setCurrentText] = useState("સુમિત પંચાલ");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -51,9 +51,9 @@ const HeroSection = () => {
       "start+=3.2"
     );
 
-    // Multilingual transition: Telugu -> Hindi -> English
-    const t1 = setTimeout(() => setCurrentText("हर्षिता पोर्टफोलियो"), 1000);
-    const t2 = setTimeout(() => setCurrentText("HARSHITHA CHODEY"), 2000);
+    // Multilingual transition: Gujarati -> Hindi -> English
+    const t1 = setTimeout(() => setCurrentText("सुमित पंचाल"), 1000);
+    const t2 = setTimeout(() => setCurrentText("SUMIT PANCHAL"), 2000);
 
     return () => {
       tl.kill();
@@ -142,8 +142,8 @@ const HeroSection = () => {
         >
           {/* Logo Avatar */}
           <img
-            src="/avatar.png"
-            alt="Harshitha Chodey"
+            src="/Sumit_Avatars.png"
+            alt="Sumit Panchal"
             className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 mb-6 object-cover shadow-2xl ring-2 ring-accent/30"
           />
 
@@ -181,11 +181,10 @@ const HeroSection = () => {
         >
           {/* Animated Hero Image (Visible when NOT playing) */}
           <img
-            src="/harshitha-hero.png"
-            alt="Harshitha Chodey"
-            className={`absolute inset-0 w-full h-full object-cover object-[center_top] md:object-[60%_top] transition-opacity duration-700 ease-in-out ${
-              isPlaying ? "opacity-0 pointer-events-none" : "opacity-100"
-            }`}
+            src="/sumit-hero.png"
+            alt="Sumit Panchal"
+            className={`absolute inset-0 w-full h-full object-cover object-[center_top] md:object-[60%_top] transition-opacity duration-700 ease-in-out ${isPlaying ? "opacity-0 pointer-events-none" : "opacity-100"
+              }`}
           />
 
           {/* User's Animated Video with Audio (Plays and becomes visible when playing) */}
@@ -196,9 +195,8 @@ const HeroSection = () => {
             playsInline
             preload="auto"
             onEnded={() => setIsPlaying(false)}
-            className={`absolute inset-0 w-full h-full object-cover object-[center_top] md:object-[60%_top] transition-opacity duration-700 ease-in-out ${
-              isPlaying ? "opacity-100" : "opacity-0 pointer-events-none"
-            }`}
+            className={`absolute inset-0 w-full h-full object-cover object-[center_top] md:object-[60%_top] transition-opacity duration-700 ease-in-out ${isPlaying ? "opacity-100" : "opacity-0 pointer-events-none"
+              }`}
           />
 
           {/* No overlays or boxes: video is fully visible, crisp, and unblocked */}
@@ -209,40 +207,45 @@ const HeroSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={loaderDone ? "visible" : "hidden"}
-          className="absolute top-1/2 -translate-y-1/2 left-6 sm:left-12 lg:left-20 z-10 max-w-[540px] flex flex-col items-start text-left pointer-events-auto"
+          className="absolute top-[16%] left-6 sm:left-12 lg:left-20 z-10 max-w-[540px] flex flex-col items-start text-left pointer-events-auto"
         >
           <motion.span
             variants={itemVariants}
-            className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] text-[#060607]/80 uppercase mb-2"
-            style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}
+            className="text-[16px] sm:text-xs font-bold tracking-[0.25em] text-[#060607]/80 uppercase mb-1"
+            style={{
+              fontFamily: "'Neue Montreal', 'Inter', sans-serif",
+              fontWeight: 900,
+            }}
           >
-            HELLO, I&apos;M HARSHITHA
+            HELLO, I&apos;M SUMIT PANCHAL
           </motion.span>
-          
+
           <motion.div
             variants={itemVariants}
-            className="flex items-center gap-1.5 mb-6"
+            className="flex items-center gap-1.5 mb-3"
           >
             <div className="w-12 h-[1.5px] bg-accent" />
             <div className="w-2 h-2 rounded-full bg-accent" />
           </motion.div>
-          
+
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl lg:text-[3.1rem] font-black uppercase leading-[1.05] tracking-tight text-[#060607] mb-6"
+            className="text-4xl sm:text-5xl lg:text-[2.6rem] font-black uppercase leading-[1.05] tracking-tight text-[#060607] mb-3"
             style={{ fontFamily: "'AeonikBold', 'Neue Montreal', sans-serif" }}
           >
-            FULL STACK DEVELOPER <br />
-            &amp; AI / ML <br />
-            <span className="text-accent font-bold">SPECIALIST</span>
+            QUALITY<br />
+            ISN'T A<br />
+            CHECKPOINT.<br />
+            <span className="text-accent">IT'S A STANDARD.</span>
           </motion.h1>
 
           <motion.p
             variants={itemVariants}
-            className="text-xs sm:text-sm text-[#2A2B33] font-medium leading-relaxed mb-8 max-w-[42ch]"
+            className="text-xs sm:text-sm text-[#000000] font-bold leading-relaxed mb-8 max-w-[42ch]"
             style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}
           >
-            Building enterprise-grade full-stack applications, real-time operations dashboards, and intelligent LLM/OCR workflows.
+            I’m a Manual QA Engineer with 5+ years of experience identifying critical defects, validating complex workflows, and safeguarding software quality through risk-based testing, meticulous test design, and a relentless focus on the end-user experience.
+            {/* Experienced Manual QA Engineer with 5+ years of experience in functional testing, regression testing, test case design, defect lifecycle management, and delivering reliable software through a strong quality mindset. */}
           </motion.p>
 
           {/* View Work & Download CV Buttons */}
@@ -258,78 +261,137 @@ const HeroSection = () => {
             >
               <span>View My Work</span>
               <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="7" y1="17" x2="17" y2="7"/>
-                <polyline points="7 7 17 7 17 17"/>
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
               </svg>
             </a>
 
             <a
-              href="/Harshitha_Chode_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download="Harshitha_Chode_Resume.pdf"
-              className="text-xs font-semibold text-[#060607] hover:text-accent flex items-center gap-1.5 pb-0.5 border-b-2 border-[#060607]/30 hover:border-accent transition-all"
+              href="/Sumit_Panchal_Resume.pdf"
+              download="Sumit_Panchal_Resume.pdf"
+              className="px-6 py-3.5 bg-[#2446F5] text-white hover:bg-[#060607] hover:text-white rounded-full flex items-center gap-2 text-xs font-semibold tracking-wide transition-all duration-200 active:scale-95 shadow-md cursor-pointer"
               style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}
             >
               <span>Download Resume</span>
-              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"/>
-                <polyline points="19 12 12 19 5 12"/>
+              <svg
+                viewBox="0 0 24 24"
+                className="w-3.5 h-3.5 fill-none stroke-current"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 3v12" />
+                <polyline points="7 10 12 15 17 10" />
+                <path d="M5 19h14" />
               </svg>
             </a>
           </motion.div>
+
 
           {/* Social Links on Bottom-Left */}
           <motion.div
             variants={itemVariants}
             className="flex items-center gap-5 mt-8 text-[#060607]/80"
           >
+            {/* GitHub */}
             <a
-              href="https://github.com/harshithachodey05-hub"
+              href="https://github.com/lifeofthecoders"
               target="_blank"
               rel="noopener noreferrer"
               title="GitHub"
               aria-label="GitHub"
-              className="hover:text-accent transition-colors"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.75-.24.75-.53v-2.07c-3.07.67-3.72-1.3-3.72-1.3-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.91.1-.71.38-1.2.7-1.48-2.45-.28-5.02-1.23-5.02-5.46 0-1.2.43-2.2 1.13-2.97-.12-.28-.49-1.4.11-2.92 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.55 0c2.12-1.43 3.05-1.13 3.05-1.13.6 1.52.23 2.64.11 2.92.7.77 1.13 1.77 1.13 2.97 0 4.24-2.57 5.18-5.03 5.45.4.35.75 1.02.75 2.06V22c0 .3.2.64.76.53A11.1 11.1 0 0 0 12 .9Z" />
               </svg>
             </a>
+
+            {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/harshitha-ch-b6771835a/"
+              href="https://www.linkedin.com/in/sumit-panchal-b790a8236/"
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
               aria-label="LinkedIn"
-              className="hover:text-accent transition-colors"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8 19H5V9h3v10ZM6.5 7.73a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5ZM19 19h-3v-5.2c0-3.12-4-2.88-4 0V19H9V9h3v1.36c1.4-2.58 7-2.78 7 2.48V19Z" />
               </svg>
             </a>
+
+            {/* Instagram */}
             <a
-              href="mailto:harshithachodey05@gmail.com"
-              title="Email Harshitha"
-              aria-label="Email Harshitha"
-              className="hover:text-accent transition-colors"
+              href="https://www.instagram.com/workhard2livelarge?igsh=MmM0YmZvNHc0bDZ2"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+              aria-label="Instagram"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2" />
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none" />
               </svg>
             </a>
+
+            {/* Facebook */}
             <a
-              href="tel:6301496899"
-              title="Call Harshitha"
-              aria-label="Call Harshitha"
-              className="hover:text-accent transition-colors"
+              href="https://www.facebook.com/share/1BxMxaQsV8/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook"
+              aria-label="Facebook"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M24 12a12 12 0 1 0-13.88 11.86v-8.4H7.08V12h3.04V9.36c0-3 1.79-4.66 4.52-4.66 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.46h-2.79v8.4A12 12 0 0 0 24 12Z" />
+              </svg>
+            </a>
+
+            {/* Quora */}
+            <a
+              href="https://www.quora.com/profile/Sumit-Panchal-345"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Quora"
+              aria-label="Quora"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
+                <path d="M12.2 2.5c-5.6 0-9.1 4.2-9.1 9.5s3.5 9.5 9.1 9.5c1.8 0 3.3-.4 4.6-1.2l2 1.7 2-2.2-2-1.8c1.6-1.7 2.5-4.1 2.5-7 0-5.3-3.5-8.5-9.1-8.5Zm0 15.7c-2.9 0-4.5-2.5-4.5-6.5s1.6-6.5 4.5-6.5 4.5 2.5 4.5 6.5c0 1.7-.3 3.2-.9 4.3l-1.5-1.3-1.8 2 1.2 1.1c-.5.3-1 .4-1.5.4Z" />
+              </svg>
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:sumitpanchal5225@gmail.com"
+              title="Email Sumit"
+              aria-label="Email Sumit"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </a>
+
+            {/* Call */}
+            <a
+              href="tel:7359914454"
+              title="Call Sumit"
+              aria-label="Call Sumit"
+              className="inline-flex items-center justify-center transition-all duration-300 ease-in-out hover:text-[#0016EC] hover:scale-125"
+            >
+              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-none stroke-current scale-[0.85]" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
             </a>
           </motion.div>
+
+
         </motion.div>
 
         {/* Floating Sparkle + Play/Pause Video Button matching reference */}

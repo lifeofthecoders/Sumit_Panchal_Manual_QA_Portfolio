@@ -28,7 +28,7 @@ export default function Home() {
 
     console.clear();
     console.log(
-      "%cHARSHITHA CHODEY PORTFOLIO",
+      "%cSUMIT PANCHAL PORTFOLIO",
       "background: #D9E6FF; color: #0f172a; font-size: 16px; font-weight: 800; padding: 10px 16px; border-radius: 10px; letter-spacing: 2px;"
     );
   }, []);
