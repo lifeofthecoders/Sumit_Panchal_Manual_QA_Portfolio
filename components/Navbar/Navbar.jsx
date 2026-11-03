@@ -112,7 +112,7 @@ function Navbar() {
             className="flex items-center gap-2.5 cursor-pointer hover:opacity-85 transition-opacity"
           >
             <img
-              src="/avatar.png"
+              src="/Sumit_Avatars.png"
               alt="Sumit Panchal"
               className="w-8 h-8 rounded-full object-cover border border-fg/10"
             />

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 ✨ Sumit Panchal | Manual QA Engineer Portfolio
+=======
+from pathlib import Path
+
+readme = r'''# ✨ Sumit Panchal | Manual QA Engineer Portfolio
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 
 > **Quality is a mindset. Not just a process.**
 
@@ -10,7 +16,11 @@ Built with **Next.js 14, React 18, Tailwind CSS, Framer Motion, GSAP**, and supp
 
 ## 🌐 Live Portfolio
 
+<<<<<<< HEAD
 - **Portfolio:** [View Live QA Portfolio](https://sumit-panchal-manual-qa-portfolio.vercel.app/)
+=======
+- **Portfolio:** [View Live QA Portfolio](https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/)
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 - **GitHub:** [lifeofthecoders](https://github.com/lifeofthecoders)
 - **LinkedIn:** [Sumit Panchal](https://www.linkedin.com/in/sumit-panchal-b790a8236/)
 
@@ -29,7 +39,11 @@ I approach quality as a shared responsibility throughout the software developmen
 - Functional, regression, smoke, sanity, exploratory, and retesting
 - Test scenario and test case design
 - Test planning and test data preparation
+<<<<<<< HEAD
 - Requirements analysis and Requirements Traceability Matrix (RTM)
+=======
+- Requirement analysis and Requirements Traceability Matrix (RTM)
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 - Defect reporting, reproduction, lifecycle tracking, and verification
 - Severity and priority assessment
 - Root cause analysis and risk-based testing
@@ -110,12 +124,21 @@ I approach quality as a shared responsibility throughout the software developmen
 
 The portfolio presents QA work and testing focus across multiple application domains:
 
+<<<<<<< HEAD
 1. **LYMÜV - Taxi Booking Application**
 2. **Dap Me - Professional Networking Application**
 3. **Kinzwin - Multiplayer Gaming Platform & Scoreboard Application**
 4. **Bunny Books - Photo Book E-Commerce Application**
 5. **Health-E - Digital Health & Medical Records Application**
 6. **reGive - Community Sharing & Gift Transaction Application**
+=======
+1. **LYMÜV — Taxi Booking Application**
+2. **Dap Me — Professional Networking Application**
+3. **Kinzwin — Multiplayer Gaming Platform & Scoreboard Application**
+4. **Bunny Books — Photo Book E-Commerce Application**
+5. **Health-E — Digital Health & Medical Records Application**
+6. **reGive — Community Sharing & Gift Transaction Application**
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 
 The projects are presented from a quality assurance perspective, with emphasis on validating functionality, user journeys, business workflows, and application behavior.
 
@@ -132,6 +155,7 @@ The projects are presented from a quality assurance perspective, with emphasis o
 The portfolio presents QA and software testing credentials first, followed by broader technical learning and additional achievements.
 
 ### Quality Assurance & Software Testing
+<<<<<<< HEAD
 - Quality Analyst Assessment - LearnTube.ai Certified - October 23, 2026
 - Automation Testing Assessment - LearnTube.ai Certified - October 29, 2026
 - API Integration - LearnTube.ai Certified - October 23, 2026
@@ -142,6 +166,17 @@ The portfolio presents QA and software testing credentials first, followed by br
 - ISTQB CTFL (CTFL-146891 India) - ISTQB Certified - September 1, 2026
 - Business Analyst - Learntube.ai Certified - February 13, 2025
 - Quality Analyst Assessment - LearnTube.ai
+=======
+- Quality Analyst Assessment — LearnTube.ai
+- Automation Testing Assessment — LearnTube.ai
+- ISTQB Certified Tester — Testing with Generative AI (v1.1)
+- ISTQB Automation Test Engineer
+- ISTQB CTFL / Foundation Level certificates
+- ISTQB Foundation Level Agile Tester
+- Software Testing: Exploratory Testing — LinkedIn Learning
+- Quality Assurance Job Simulation — Deloitte / Forage
+- Quality Assurance Job Simulation — Tata / Forage
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 
 ### Technical Learning & Additional Achievements
 - Microsoft GitHub Foundations
@@ -166,6 +201,7 @@ Keep the filenames and paths configured in the certificates component synchroniz
 ## 🛠️ Technology Stack
 
 ### Application
+<<<<<<< HEAD
 - [Next.js 14](https://nextjs.org/) - React framework and application routing
 - [React 18](https://react.dev/) - Component-based UI
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Application logic
@@ -179,6 +215,21 @@ Keep the filenames and paths configured in the certificates component synchroniz
 - [Three.js](https://threejs.org/) - 3D rendering
 - [React Three Fiber](https://r3f.docs.pmnd.rs/) and [Drei](https://github.com/pmndrs/drei) - React-based 3D utilities
 - [Lucide React](https://lucide.dev/) - Icon library
+=======
+- [Next.js 14](https://nextjs.org/) — React framework and application routing
+- [React 18](https://react.dev/) — Component-based UI
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) — Application logic
+- [Tailwind CSS 3](https://tailwindcss.com/) — Utility-first styling
+- [PostCSS](https://postcss.org/) — CSS processing
+
+### Animation & Visual Experience
+- [Framer Motion](https://www.framer.com/motion/) — Component and interaction animations
+- [GSAP](https://gsap.com/) — Scroll-triggered and timeline animations
+- [Lenis](https://lenis.darkroom.engineering/) — Smooth scrolling
+- [Three.js](https://threejs.org/) — 3D rendering
+- [React Three Fiber](https://r3f.docs.pmnd.rs/) and [Drei](https://github.com/pmndrs/drei) — React-based 3D utilities
+- [Lucide React](https://lucide.dev/) — Icon library
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 
 ---
 
@@ -336,7 +387,11 @@ The repository's `next.config.js` contains custom webpack handling for shader-re
 
 ---
 
+<<<<<<< HEAD
 ## 🌐 Live Portfolio
+=======
+## 📬 Connect With Me
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 
 ### 🧪 Explore My QA Portfolio
 
@@ -344,6 +399,7 @@ The repository's `next.config.js` contains custom webpack handling for shader-re
 
 ---
 
+<<<<<<< HEAD
 ## 💼 Professional Focus
 
 I'm interested in opportunities where I can contribute to building products that are:
@@ -379,6 +435,8 @@ If you'd like to connect, collaborate, or discuss QA and software testing, feel 
 
 ---
 
+=======
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
 ## 💡 Professional Philosophy
 
 > Quality is not just about finding defects. It is about understanding the product, anticipating risks, validating real user behavior, and building confidence in every release.
@@ -389,6 +447,7 @@ If you'd like to connect, collaborate, or discuss QA and software testing, feel 
 
 ---
 
+<<<<<<< HEAD
 ## ⭐ Support
 
 <p align="center">
@@ -409,3 +468,12 @@ RELIABILITY IS MY GOAL.</strong>
 <p align="center">
   © Sumit Panchal. All rights reserved.
 </p>
+=======
+<p align="center">
+  © Sumit Panchal. All rights reserved.
+</p>
+'''
+path = Path("/mnt/data/README.md")
+path.write_text(readme, encoding="utf-8")
+print(f"Created {path} ({path.stat().st_size:,} bytes)")
+>>>>>>> ae078b1 (Prepare Sumit Panchal Manual QA Portfolio for deployment)
