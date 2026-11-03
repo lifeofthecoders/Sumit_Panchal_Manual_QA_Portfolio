@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Image from "next/image";
+import { assetPath } from "../../lib/assetPath";
 
 const FeaturedVideo = ({ refForward, ...props }) => {
   const ref = useRef(null);
@@ -30,7 +31,7 @@ const FeaturedVideo = ({ refForward, ...props }) => {
       {...props}
     >
       <Image
-        src="/Sumit-featured.png"
+        src={assetPath('/Sumit-featured.png')}
         alt="Sumit Panchal portrait"
         fill
         priority

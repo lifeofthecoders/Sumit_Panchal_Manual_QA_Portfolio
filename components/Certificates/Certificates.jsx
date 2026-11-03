@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import CertificateModal from "./CertificateModal";
+import { assetPath } from "../../lib/assetPath";
 
 const CERTIFICATES = [
   // 1. Primary Quality Assurance Credentials
@@ -390,7 +391,7 @@ const Certificates = () => {
                 {/* Thumbnail Container */}
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-4 bg-black/5 border border-theme-border group-hover:border-accent/40 transition-colors flex items-center justify-center">
                   <img
-                    src={cert.image}
+                    src={assetPath(cert.image)}
                     alt={cert.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"

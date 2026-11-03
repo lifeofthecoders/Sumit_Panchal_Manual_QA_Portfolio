@@ -9,6 +9,7 @@ import LetsTalk from "./LetsTalk";
 import MenuButton from "./MenuButton";
 import Link from "next/link";
 import MusicButton from "./MusicButton";
+import { assetPath } from "../../lib/assetPath";
 
 const ACCENT_BLUE = "#0016EC";
 
@@ -100,9 +101,8 @@ function Navbar() {
     <>
       {/* Mobile Navbar */}
       <div
-        className={`fixed top-0 left-0 z-[100001] w-full px-5 py-5 lg:hidden transition-all duration-300 ${
-          scrolled ? "bg-bg/85 backdrop-blur-md shadow-sm" : ""
-        }`}
+        className={`fixed top-0 left-0 z-[100001] w-full px-5 py-5 lg:hidden transition-all duration-300 ${scrolled ? "bg-bg/85 backdrop-blur-md shadow-sm" : ""
+          }`}
       >
         <div className="flex w-full items-center justify-between font-extrabold">
           <Link
@@ -111,16 +111,15 @@ function Navbar() {
             onClick={(e) => handleMobileNav(e, "top")}
             className="flex items-center gap-2.5 cursor-pointer hover:opacity-85 transition-opacity"
           >
-          <img
-            src="/Sumit_Avatars.png"
-            alt="Sumit Panchal"
-            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 mb-6 object-cover shadow-2xl ring-2 ring-accent/30"
-          />
+            <img
+              src={assetPath('/Sumit_Avatars.png')}
+              alt="Sumit Panchal"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 mb-6 object-cover shadow-2xl ring-2 ring-accent/30"
+            />
 
             <span
-              className={`tracking-wider font-semibold text-lg transition-colors duration-200 ${
-                scrolled ? "text-fg" : "text-[#060607]"
-              }`}
+              className={`tracking-wider font-semibold text-lg transition-colors duration-200 ${scrolled ? "text-fg" : "text-[#060607]"
+                }`}
               style={{ letterSpacing: "-0.03em" }}
             >
               SUMIT PANCHAL
@@ -162,11 +161,10 @@ function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-[100000] lg:hidden transition-opacity duration-300 ${
-          mobileOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 z-[100000] lg:hidden transition-opacity duration-300 ${mobileOpen
+          ? "opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
+          }`}
         aria-hidden={!mobileOpen}
       >
         <div
@@ -253,11 +251,10 @@ function Navbar() {
 
       {/* Desktop Navbar */}
       <div
-        className={`fixed top-0 left-0 w-full px-6 lg:px-20 z-[100001] transition-all duration-300 ${
-          scrolled
-            ? "bg-bg/85 backdrop-blur-md shadow-sm pt-4 pb-4"
-            : "pt-10 pb-10"
-        }`}
+        className={`fixed top-0 left-0 w-full px-6 lg:px-20 z-[100001] transition-all duration-300 ${scrolled
+          ? "bg-bg/85 backdrop-blur-md shadow-sm pt-4 pb-4"
+          : "pt-10 pb-10"
+          }`}
       >
         <div className="hidden lg:flex items-start justify-between">
           <div className="flex items-center">
@@ -267,23 +264,28 @@ function Navbar() {
               className="flex items-center gap-3 hover:opacity-85 transition-opacity"
             >
               <img
-                src="/avatar.png"
+                src={assetPath('/Sumit_Avatars.png')}
                 alt="Sumit Panchal"
                 className="w-10 h-10 rounded-full object-cover border border-fg/10"
               />
 
               <span
-                className={`font-AeonikMedium text-2xl tracking-wider uppercase font-extrabold transition-colors duration-200 ${
-                  scrolled ? "text-fg" : "text-[#060607]"
-                }`}
-                style={{ fontWeight: 700 }}
+                className={`text-2xl tracking-wider uppercase font-extrabold transition-colors duration-200 ${scrolled ? "text-fg" : "text-[#060607]"
+                  }`}
+                style={{
+                  fontWeight: 700,
+                  fontFamily: "var(--font-inter), 'Inter', sans-serif",
+                }}
               >
                 SUMIT PANCHAL
               </span>
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center justify-around font-AeonikMedium">
+          <div
+            className="hidden lg:flex items-center justify-around"
+            style={{ fontFamily: "var(--font-inter), 'Inter', sans-serif" }}
+          >
             <Trail open={open} className="flex">
               <MusicButton />
               <LetsTalk />

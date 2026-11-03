@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
+import { assetPath } from "../../lib/assetPath";
 
 const HeroSection = () => {
   const sectionRef = useRef(null);
@@ -142,7 +143,7 @@ const HeroSection = () => {
         >
           {/* Logo Avatar */}
           <img
-            src="/Sumit_Avatars.png"
+            src={assetPath('/Sumit_Avatars.png')}
             alt="Sumit Panchal"
             className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 mb-6 object-cover shadow-2xl ring-2 ring-accent/30"
           />
@@ -156,7 +157,7 @@ const HeroSection = () => {
               exit={{ opacity: 0, y: -15 }}
               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
               className="text-[#F5F1EA] text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-widest uppercase"
-              style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}
+              style={{ fontFamily: "var(--font-inter), 'Inter', sans-serif" }}
             >
               {currentText}
             </motion.div>
@@ -181,7 +182,7 @@ const HeroSection = () => {
         >
           {/* Animated Hero Image (Visible when NOT playing) */}
           <img
-            src="/sumit-hero.png"
+            src={assetPath('/Sumit-hero.png')}
             alt="Sumit Panchal"
             className={`absolute inset-0 w-full h-full object-cover object-[center_top] md:object-[60%_top] transition-opacity duration-700 ease-in-out ${isPlaying ? "opacity-0 pointer-events-none" : "opacity-100"
               }`}
@@ -190,7 +191,7 @@ const HeroSection = () => {
           {/* User's Animated Video with Audio (Plays and becomes visible when playing) */}
           <video
             ref={videoRef}
-            src="/animated-video.mp4"
+            src={assetPath('/animated-video.mp4')}
             loop
             playsInline
             preload="auto"
@@ -213,7 +214,7 @@ const HeroSection = () => {
             variants={itemVariants}
             className="text-[16px] sm:text-xs font-bold tracking-[0.25em] text-[#060607]/80 uppercase mb-1"
             style={{
-              fontFamily: "'Neue Montreal', 'Inter', sans-serif",
+              fontFamily: "var(--font-inter), 'Inter', sans-serif",
               fontWeight: 900,
             }}
           >
@@ -231,7 +232,7 @@ const HeroSection = () => {
           <motion.h1
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-[2.6rem] font-black uppercase leading-[1.05] tracking-tight text-[#060607] mb-3"
-            style={{ fontFamily: "'AeonikBold', 'Neue Montreal', sans-serif" }}
+            style={{ fontFamily: "var(--font-inter), 'Inter', sans-serif" }}
           >
             QUALITY<br />
             ISN'T A<br />
@@ -242,7 +243,7 @@ const HeroSection = () => {
           <motion.p
             variants={itemVariants}
             className="text-xs sm:text-sm text-[#000000] font-bold leading-relaxed mb-8 max-w-[42ch]"
-            style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}
+            style={{ fontFamily: "var(--font-inter), 'Inter', sans-serif" }}
           >
             I’m a Manual QA Engineer with 5+ years of experience identifying critical defects, validating complex workflows, and safeguarding software quality through risk-based testing, meticulous test design, and a relentless focus on the end-user experience.
             {/* Experienced Manual QA Engineer with 5+ years of experience in functional testing, regression testing, test case design, defect lifecycle management, and delivering reliable software through a strong quality mindset. */}
@@ -257,7 +258,7 @@ const HeroSection = () => {
               href="#projects-section"
               onClick={handleScrollToWork}
               className="px-6 py-3.5 bg-[#060607] text-[#F9F8FF] hover:bg-accent hover:text-white rounded-full flex items-center gap-2 text-xs font-semibold tracking-wide transition-all duration-200 active:scale-95 shadow-md cursor-pointer"
-              style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}
+              style={{ fontFamily: "var(--font-inter), 'Inter', sans-serif" }}
             >
               <span>View My Work</span>
               <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 fill-none stroke-current" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -267,7 +268,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href="/Sumit_Panchal_Resume.pdf"
+              href={assetPath('/Sumit_Panchal_Resume.pdf')}
               download="Sumit_Panchal_Resume.pdf"
               className="px-6 py-3.5 bg-[#2446F5] text-white hover:bg-[#060607] hover:text-white rounded-full flex items-center gap-2 text-xs font-semibold tracking-wide transition-all duration-200 active:scale-95 shadow-md cursor-pointer"
               style={{ fontFamily: "'Neue Montreal', 'Inter', sans-serif" }}

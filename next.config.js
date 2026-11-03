@@ -1,25 +1,24 @@
-/** @type {import('next').NextConfig} */
-
 const isProduction = process.env.NODE_ENV === 'production';
 
-const nextConfig = {
-  // GitHub Pages project repository path
-  basePath: isProduction
-    ? '/Sumit_Panchal_Manual_QA_Portfolio'
-    : '',
+const BASE_PATH = isProduction
+  ? '/Sumit_Panchal_Manual_QA_Portfolio'
+  : '';
 
-  // Generate a static website for GitHub Pages
+const nextConfig = {
+  basePath: BASE_PATH,
+
   output: 'export',
 
-  // Generate directory-style routes
   trailingSlash: true,
 
-  // GitHub Pages does not provide Next.js image optimization
   images: {
     unoptimized: true,
   },
 
-  // Preserve your existing GLSL shader loader
+  env: {
+    NEXT_PUBLIC_BASE_PATH: BASE_PATH,
+  },
+
   webpack(config) {
     config.module.rules.push({
       test: /\.(glsl|vs|fs|vert|frag)$/,
