@@ -111,11 +111,11 @@ function Navbar() {
             onClick={(e) => handleMobileNav(e, "top")}
             className="flex items-center gap-2.5 cursor-pointer hover:opacity-85 transition-opacity"
           >
-            <img
-              src="/Sumit_Avatars.png"
-              alt="Sumit Panchal"
-              className="w-8 h-8 rounded-full object-cover border border-fg/10"
-            />
+          <img
+            src="/Sumit_Avatars.png"
+            alt="Sumit Panchal"
+            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 mb-6 object-cover shadow-2xl ring-2 ring-accent/30"
+          />
 
             <span
               className={`tracking-wider font-semibold text-lg transition-colors duration-200 ${
