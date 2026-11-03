@@ -22,14 +22,14 @@ I'm **Sumit Panchal**, a Manual QA Engineer and Quality Analyst with **5+ years 
 
 My focus is on understanding requirements, designing effective test scenarios and test cases, validating end-to-end workflows, identifying defects, and helping teams deliver stable, reliable software.
 
-I approach quality as a shared responsibility throughout the software development lifecycle—not simply a final testing phase.
+I approach quality as a shared responsibility throughout the software development lifecycle, not simply a final testing phase.
 
 ### 🔍 Core QA Capabilities
 
 - Functional, regression, smoke, sanity, exploratory, and retesting
 - Test scenario and test case design
 - Test planning and test data preparation
-- Requirement analysis and Requirements Traceability Matrix (RTM)
+- Requirements analysis and Requirements Traceability Matrix (RTM)
 - Defect reporting, reproduction, lifecycle tracking, and verification
 - Severity and priority assessment
 - Root cause analysis and risk-based testing
@@ -110,12 +110,12 @@ I approach quality as a shared responsibility throughout the software developmen
 
 The portfolio presents QA work and testing focus across multiple application domains:
 
-1. **LYMÜV — Taxi Booking Application**
-2. **Dap Me — Professional Networking Application**
-3. **Kinzwin — Multiplayer Gaming Platform & Scoreboard Application**
-4. **Bunny Books — Photo Book E-Commerce Application**
-5. **Health-E — Digital Health & Medical Records Application**
-6. **reGive — Community Sharing & Gift Transaction Application**
+1. **LYMÜV - Taxi Booking Application**
+2. **Dap Me - Professional Networking Application**
+3. **Kinzwin - Multiplayer Gaming Platform & Scoreboard Application**
+4. **Bunny Books - Photo Book E-Commerce Application**
+5. **Health-E - Digital Health & Medical Records Application**
+6. **reGive - Community Sharing & Gift Transaction Application**
 
 The projects are presented from a quality assurance perspective, with emphasis on validating functionality, user journeys, business workflows, and application behavior.
 
@@ -132,15 +132,16 @@ The projects are presented from a quality assurance perspective, with emphasis o
 The portfolio presents QA and software testing credentials first, followed by broader technical learning and additional achievements.
 
 ### Quality Assurance & Software Testing
-- Quality Analyst Assessment — LearnTube.ai
-- Automation Testing Assessment — LearnTube.ai
-- ISTQB Certified Tester — Testing with Generative AI (v1.1)
-- ISTQB Automation Test Engineer
-- ISTQB CTFL / Foundation Level certificates
-- ISTQB Foundation Level Agile Tester
-- Software Testing: Exploratory Testing — LinkedIn Learning
-- Quality Assurance Job Simulation — Deloitte / Forage
-- Quality Assurance Job Simulation — Tata / Forage
+- Quality Analyst Assessment - LearnTube.ai Certified - October 23, 2026
+- Automation Testing Assessment - LearnTube.ai Certified - October 29, 2026
+- API Integration - LearnTube.ai Certified - October 23, 2026
+- Component Testing - LearnTube.ai Certified - October 23, 2026
+- Frontend Debugging - LearnTube.ai Certified - October 23, 2026
+- Foundation Level Certificate in Software Testing (CTFL-144993 India) - ISTQB Certified - August 1, 2026
+- Automation Test Engineer (CTFL-144993 India) - ISTQB Certified - October 1, 2026
+- ISTQB CTFL (CTFL-146891 India) - ISTQB Certified - September 1, 2026
+- Business Analyst - Learntube.ai Certified - February 13, 2025
+- Quality Analyst Assessment - LearnTube.ai
 
 ### Technical Learning & Additional Achievements
 - Microsoft GitHub Foundations
@@ -165,19 +166,19 @@ Keep the filenames and paths configured in the certificates component synchroniz
 ## 🛠️ Technology Stack
 
 ### Application
-- [Next.js 14](https://nextjs.org/) — React framework and application routing
-- [React 18](https://react.dev/) — Component-based UI
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) — Application logic
-- [Tailwind CSS 3](https://tailwindcss.com/) — Utility-first styling
-- [PostCSS](https://postcss.org/) — CSS processing
+- [Next.js 14](https://nextjs.org/) - React framework and application routing
+- [React 18](https://react.dev/) - Component-based UI
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Application logic
+- [Tailwind CSS 3](https://tailwindcss.com/) - Utility-first styling
+- [PostCSS](https://postcss.org/) - CSS processing
 
 ### Animation & Visual Experience
-- [Framer Motion](https://www.framer.com/motion/) — Component and interaction animations
-- [GSAP](https://gsap.com/) — Scroll-triggered and timeline animations
-- [Lenis](https://lenis.darkroom.engineering/) — Smooth scrolling
-- [Three.js](https://threejs.org/) — 3D rendering
-- [React Three Fiber](https://r3f.docs.pmnd.rs/) and [Drei](https://github.com/pmndrs/drei) — React-based 3D utilities
-- [Lucide React](https://lucide.dev/) — Icon library
+- [Framer Motion](https://www.framer.com/motion/) - Component and interaction animations
+- [GSAP](https://gsap.com/) - Scroll-triggered and timeline animations
+- [Lenis](https://lenis.darkroom.engineering/) - Smooth scrolling
+- [Three.js](https://threejs.org/) - 3D rendering
+- [React Three Fiber](https://r3f.docs.pmnd.rs/) and [Drei](https://github.com/pmndrs/drei) - React-based 3D utilities
+- [Lucide React](https://lucide.dev/) - Icon library
 
 ---
 
@@ -335,14 +336,47 @@ The repository's `next.config.js` contains custom webpack handling for shader-re
 
 ---
 
-## 📬 Connect With Me
+## 🌐 Live Portfolio
+
+### 🧪 Explore My QA Portfolio
+
+👉 [**OPEN LIVE PORTFOLIO**](https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/)
+
+---
+
+## 💼 Professional Focus
+
+I'm interested in opportunities where I can contribute to building products that are:
+
+**Reliable • Usable • Consistent • Stable • Scalable • User-Friendly**
+
+I bring a QA mindset that focuses not only on whether a feature works, but also on **how the complete product behaves in the hands of a real user**.
+
+My approach combines structured testing with real-world user behavior, helping identify defects, usability issues, edge cases, and potential risks before they reach the end user.
+
+---
+
+## 📄 License
+
+This project is a personal professional portfolio created for business and professional purposes.
+
+All portfolio content, personal information, branding, project materials, images, designs, and other assets belong to the author unless otherwise stated.
+
+Unauthorized copying, redistribution, modification, or commercial use of the portfolio content and assets is not permitted.
+
+---
+
+## 📫 Connect With Me
+
+If you'd like to connect, collaborate, or discuss QA and software testing, feel free to reach out.
 
 **Sumit Panchal**  
-Manual QA Engineer | Quality Analyst
-
-- **Email:** [sumitpanchal5225@gmail.com](mailto:sumitpanchal5225@gmail.com)
-- **LinkedIn:** [linkedin.com/in/sumit-panchal-b790a8236](https://www.linkedin.com/in/sumit-panchal-b790a8236/)
-- **GitHub:** [github.com/lifeofthecoders](https://github.com/lifeofthecoders)
+**Quality Analyst | Manual QA | Software Testing**
+- 📧 **Email:-**    [sumitpanchal5225@gmail.com](mailto:sumitpanchal5225@gmail.com)
+- 🌐 **Portfolio:** [https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/](https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/)
+- 📧 **Email:-**    [sumitpanchal5225@gmail.com](mailto:sumitpanchal5225@gmail.com)
+- 🔗 **LinkedIn:-** [linkedin.com/in/sumit-panchal](https://www.linkedin.com/in/sumit-panchal-b790a8236/)
+- 💻 **GitHub:-**   [github.com/lifeofthecoders](https://github.com/lifeofthecoders)
 
 ---
 
@@ -353,6 +387,17 @@ Manual QA Engineer | Quality Analyst
 <p align="center">
   <strong>PRECISION. QUALITY. TRUST. DELIVERED. ✨</strong>
 </p>
+
+---
+
+## ⭐ Support
+
+If you find this portfolio useful, feel free to explore the project and give the repository a star ⭐.
+
+**QUALITY IS MY CRAFT.**  
+**RELIABILITY IS MY GOAL.**
+
+**HAPPY TESTING 😀**
 
 ---
 
