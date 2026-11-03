@@ -224,9 +224,29 @@ const SiteFooter = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Sumit Panchal. All rights reserved.</p>
-        <p>Crafted with precision. Driven by quality. Focused on excellence.</p>
+      <div className="footer-bottom grid grid-cols-1 md:grid-cols-3 items-center gap-3 md:gap-4">
+
+        {/* Left: Copyright */}
+        <p className="text-center md:text-left">
+          © {new Date().getFullYear()} Sumit Panchal. All rights reserved.
+        </p>
+
+        {/* Center: Morse Code Signature */}
+        <p
+          className="text-center font-semibold tracking-wider text-sm whitespace-nowrap"
+          title="SUMIT PANCHAL in Morse Code"
+          aria-label="Sumit Panchal in Morse Code"
+        >
+          <span className="mr-1">📡</span>
+          ... ..- -- .. - / .--. .- -. -.-. .... .- .-..
+          <span className="ml-1">🛰️</span>
+        </p>
+
+        {/* Right: Professional Tagline */}
+        <p className="text-center md:text-right">
+          Crafted with precision. Driven by quality. Focused on excellence.
+        </p>
+
       </div>
     </footer>
   );
