@@ -115,7 +115,7 @@ function Navbar() {
             src="/Sumit_Avatars.png"
             alt="Sumit Panchal"
             className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 mb-6 object-cover shadow-2xl ring-2 ring-accent/30"
-          />
+          />git commit -m "Update Navbar component"
 
             <span
               className={`tracking-wider font-semibold text-lg transition-colors duration-200 ${
