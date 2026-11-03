@@ -10,7 +10,7 @@ Built with **Next.js 14, React 18, Tailwind CSS, Framer Motion, GSAP**, and supp
 
 ## 🌐 Live Portfolio
 
-- **Portfolio:** [View Live QA Portfolio](https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/)
+- **Portfolio:** [View Live QA Portfolio](https://sumit-panchal-manual-qa-portfolio.vercel.app/)
 - **GitHub:** [lifeofthecoders](https://github.com/lifeofthecoders)
 - **LinkedIn:** [Sumit Panchal](https://www.linkedin.com/in/sumit-panchal-b790a8236/)
 
@@ -340,7 +340,7 @@ The repository's `next.config.js` contains custom webpack handling for shader-re
 
 ### 🧪 Explore My QA Portfolio
 
-👉 [**OPEN LIVE PORTFOLIO**](https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/)
+👉 [**OPEN LIVE PORTFOLIO**](https://sumit-panchal-manual-qa-portfolio.vercel.app/)
 
 ---
 
@@ -372,11 +372,10 @@ If you'd like to connect, collaborate, or discuss QA and software testing, feel 
 
 **Sumit Panchal**  
 **Quality Analyst | Manual QA | Software Testing**
-- 📧 **Email:-**    [sumitpanchal5225@gmail.com](mailto:sumitpanchal5225@gmail.com)
-- 🌐 **Portfolio:** [https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/](https://lifeofthecoders.github.io/Sumit-Panchal-QA-Portfolio/)
-- 📧 **Email:-**    [sumitpanchal5225@gmail.com](mailto:sumitpanchal5225@gmail.com)
-- 🔗 **LinkedIn:-** [linkedin.com/in/sumit-panchal](https://www.linkedin.com/in/sumit-panchal-b790a8236/)
-- 💻 **GitHub:-**   [github.com/lifeofthecoders](https://github.com/lifeofthecoders)
+- <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16" alt="Gmail" /> **Email:** [sumitpanchal5225@gmail.com](mailto:sumitpanchal5225@gmail.com)
+- <img src="https://cdn.simpleicons.org/googlechrome/4285F4" width="16" height="16" alt="Portfolio" /> **Portfolio:** [lifeofthecoders.github.io/Sumit_Panchal_Manual_QA_Portfolio/](https://sumit-panchal-manual-qa-portfolio.vercel.app/)
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="16" height="16" alt="LinkedIn" /> **LinkedIn:** [linkedin.com/in/sumit-panchal](https://www.linkedin.com/in/sumit-panchal-b790a8236/)
+- <img src="https://cdn.simpleicons.org/github/FFFFFF" width="16" height="16" alt="GitHub" /> **GitHub:** [github.com/lifeofthecoders](https://github.com/lifeofthecoders)
 
 ---
 
@@ -392,12 +391,18 @@ If you'd like to connect, collaborate, or discuss QA and software testing, feel 
 
 ## ⭐ Support
 
+<p align="center">
 If you find this portfolio useful, feel free to explore the project and give the repository a star ⭐.
+</p>
 
-**QUALITY IS MY CRAFT.**  
-**RELIABILITY IS MY GOAL.**
+<p align="center">
+<strong>QUALITY IS MY CRAFT.<br>
+RELIABILITY IS MY GOAL.</strong>
+</p>
 
-**HAPPY TESTING 😀**
+<p align="center">
+<strong>HAPPY TESTING 😀</strong>
+</p>
 
 ---
 
