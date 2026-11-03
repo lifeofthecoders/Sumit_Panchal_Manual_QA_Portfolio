@@ -115,13 +115,22 @@ const CertificateModal = ({ cert, isOpen, onClose }) => {
                   </a>
                 )}
 
-                <a
+                {/* <a
                   href={assetPath(cert.image)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-full border border-theme-border text-fg font-medium text-xs tracking-wider uppercase hover:bg-fg/5 transition-colors"
                 >
                   Open Full Asset
+                </a> */}
+                <a
+                  href={assetPath(cert.image)}
+                  download={cert.image.split("/").pop() || "certificate.png"}
+                  className="px-4 py-2 rounded-full border border-theme-border text-fg font-medium text-xs tracking-wider uppercase hover:bg-fg/5 transition-colors inline-flex items-center gap-2"
+                  title="Open Full Asset"
+                >
+                  <span>Open Full Asset</span>
+                  <span aria-hidden="true">↓</span>
                 </a>
               </div>
             </div>
